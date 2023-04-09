@@ -1,99 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Lab#1 Var 1</title>
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Hello</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> 
+        <h4>ССЫЛКИ-ЯКОРИ</h4>
+        <a href="#hello_ch" target="_self">Приветствие</a><br>
+        <a href="#text_ch" target="_self">Задание 1</a><br>
+        <a href="#list_ch" target="_self">Задание 2</a><br>
+        <a href="#table_ch" target="_self">Задание 3</a><br>
+        <a href="#form_ch" target="_self">Задание 4</a>
+        <h1 id="hello_ch">Hello</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> 
             Cupiditate, adipisci numquam. Asperiores sunt, assumenda<br> 
             excepturi voluptates delectus minus. Quas est nesciunt<br> 
             illum sequi fuga vel praesentium cupiditate labore.<br> 
             Repellat, dolor?
         </p>
-        <b>ТЕКСТ</b>
-        <br>
-        <span>
-            Для будь-якого натурального числа <b>n&gt;2</b> 
-            рівняння <i>a<sup>n</sup>+b<sup>n</sup>=c<sup>n</sup></i> 
-            <b>не має рішень</b> при цілих ненульових числах a, b, c.
-        </span>
-        <br><br>
-        <b>СПИСОК</b>
+        <h4 id="text_ch">ТЕКСТ</h4>
+        Для будь-якого натурального числа <b>n&gt;2</b> 
+        рівняння <i>a<sup>n</sup>+b<sup>n</sup>=c<sup>n</sup></i> 
+        <b>не має рішень</b> при цілих ненульових числах a, b, c.
+        <h4 id="list_ch">СПИСОК</h4>
         <ul>
            <li>
-                Сколько клеточек на шахматной доске?
+                Харьковский Национальный Университет Радиоэлектроники
                 <ol>
-                    <li>46</li>
-                    <li>54</li>
-                    <li>64</li>
-                </ol>
-            </li>
-            <li>
-                Какая самая высокая гора в мире?
-                <ol>
-                    <li>Джомолунгма</li>
-                    <li>Эльбрус</li>
-                    <li>Говерла</li>
-                </ol>
-            </li>
-            <li>
-                Когда произошла битва на Калке?
-                <ol>
-                    <li>в 1242 году</li>
-                    <li>в 1648 году</li>
-                    <li>в 1223 году</li>
+                    <li>
+                        Факультет компьютерной инженерии и управления
+                        <ul>
+                            <li>Кафедра АПВТ</li>
+                            <li>Кафедра ЭВМ</li>
+                            <li>Кафедра БИТ</li>
+                        </ul>                        
+                    </li>
+                    <li>
+                       Факультет компьютерных наук
+                        <ul>
+                            <li>Кафедра СТ</li>
+                            <li>Кафедра ИИ</li>
+                            <li>Кафедра ИУС</li>
+                        </ul>
+                    </li>
                 </ol>
             </li>
         </ul>
-        <b>ТАБЛИЦА</b><br>
+        <h4 id="table_ch">ТАБЛИЦА</h4>
         <table border="1">
             <thead> 
                 <tr>
-                    <th>ФИО</th>
-                    <th>Группа</th>
-                    <th>Предмет</th>
-                    <th>Оценка</th>
+                    <th>Валюта</th>
+                    <th>Гривна</th>
+                    <th>Евро</th>
+                    <th>Доллар</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Прохоренко А.А</td>
-                    <td>КИУКИ-20-1</td>
-                    <td>Моб Системы</td>
-                    <td>75</td>
+                    <td>Доллар</td>
+                    <td>36,51</td>
+                    <td>0,91</td>
+                    <td>1</td>
                 </tr>
                 <tr>
-                    <td>Ильин С.Ю</td>
-                    <td>КИУКИ-20-1</td>
-                    <td>ЛогМ</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>Сапонько Л.Д</td>
-                    <td>КИУКИ-20-1</td>
-                    <td>Soc</td>
-                    <td>63</td>
+                    <td>Евро</td>
+                    <td>40,14</td>
+                    <td>1</td>
+                    <td>1,10</td>
                 </tr>
             </tbody>
         </table>
-        <br><b>ФОРМА</b>
+        <h4 id="form_ch">ФОРМА</h4>
         <form>
-            <br>Введите почту:<br>
-            <input type="text" name="mail" id="mail" value="enter mail">
-            <br>Введите своё имя:<br>
-            <input type="text" name="username" id="username" value="username">
-            <br>Введите пароль:<br>
-            <input type="password" name="password" id="qwerty" value="password">
-            <br>Подтвердите пароль:<br>
-            <input type="password" id="confirm" value="confirm">
-            <br>
-            <input type="button" id="signup" value="signup">
+            <b>Какой из редакторов описанных ниже Вы предпочитаете больше всего?</b><br>
+            <input type="radio" name="editor" id="option1">
+            VS Code<br>
+            <input type="radio" name="editor" id="option2">
+            Notepad<br>
+            <input type="radio" name="editor" id="option3">
+            Редакторы от JetBrains<br>
+            <input type="radio" name="editor" id="option4">
+            Vim
         </form>
-        <br><b>БАННЕР-ССЫЛКА</b><br>
-        <a href="https://nure.ua"> 
-            <img src="nure_edu.jpg" width="1980" height="400" alt="education">
-        </a>
     </body>
 </html>
